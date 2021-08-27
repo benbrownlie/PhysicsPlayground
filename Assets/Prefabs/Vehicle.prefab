@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7354160573291182513}
   - component: {fileID: 4838566608499460890}
   - component: {fileID: 8469772804552100008}
+  - component: {fileID: 3537534607626410563}
   m_Layer: 0
   m_Name: Lower Body
   m_TagString: Untagged
@@ -135,7 +136,7 @@ HingeJoint:
     targetPosition: 0
   m_UseMotor: 1
   m_Motor:
-    targetVelocity: 800
+    targetVelocity: 0
     force: 800
     freeSpin: 0
   m_UseLimits: 0
@@ -170,7 +171,7 @@ HingeJoint:
     targetPosition: 0
   m_UseMotor: 1
   m_Motor:
-    targetVelocity: -800
+    targetVelocity: 0
     force: 800
     freeSpin: 0
   m_UseLimits: 0
@@ -205,7 +206,7 @@ HingeJoint:
     targetPosition: 0
   m_UseMotor: 1
   m_Motor:
-    targetVelocity: 800
+    targetVelocity: 0
     force: 800
     freeSpin: 0
   m_UseLimits: 0
@@ -240,7 +241,7 @@ HingeJoint:
     targetPosition: 0
   m_UseMotor: 1
   m_Motor:
-    targetVelocity: -800
+    targetVelocity: 0
     force: 800
     freeSpin: 0
   m_UseLimits: 0
@@ -256,6 +257,22 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &3537534607626410563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285355695028933497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193ae83e539522c4daadd28d830e89af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontleft: {fileID: 1611472804701433193}
+  frontright: {fileID: 1611472804701433193}
+  backleft: {fileID: 1611472804701433193}
+  backright: {fileID: 1611472804701433193}
 --- !u!1 &2499777029597101410
 GameObject:
   m_ObjectHideFlags: 0
