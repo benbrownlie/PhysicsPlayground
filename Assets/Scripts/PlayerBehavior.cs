@@ -26,6 +26,14 @@ public class PlayerBehavior : MonoBehaviour
         _controller = GetComponent<CharacterController>();
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+
+        }
+    }
+
     private void Update()
     {
         //Get movement input
