@@ -408,7 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 717951069}
   distanceFromTarget: 10
-  sensitivity: 500
+  sensitivity: 5
   invertY: 0
 --- !u!1 &369315955
 GameObject:

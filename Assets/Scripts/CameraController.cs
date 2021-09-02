@@ -19,9 +19,9 @@ public class CameraController : MonoBehaviour
             rotation.x = Input.GetAxis("Mouse Y") * (invertY ? 1.0f : -1.0f);
             rotation.y = Input.GetAxis("Mouse X");
             //Look up and down by rotating around X-axis
-            angles.x = Mathf.Clamp(angles.x + rotation.x * sensitivity * Time.deltaTime, 0.0f, 70.0f);
+            angles.x = Mathf.Clamp(angles.x + rotation.x * sensitivity, 0.0f, 70.0f);
             //Look left and right by rotating around the Y-axis
-            angles.y += rotation.y * sensitivity * Time.deltaTime;
+            angles.y += rotation.y * sensitivity;
             //Set the angles
             transform.eulerAngles = angles;
         }
