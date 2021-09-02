@@ -29,8 +29,8 @@ public class PlayerBehavior : MonoBehaviour
     private void Update()
     {
         //Get movement input
-        float inputForward = Input.GetAxis("Horizontal");
-        float inputRight = Input.GetAxis("Vertical");
+        float inputForward = Input.GetAxis("Vertical");
+        float inputRight = Input.GetAxis("Horizontal");
 
         //Get camera forward
         Vector3 cameraForward = playerCamera.transform.forward;
@@ -40,9 +40,7 @@ public class PlayerBehavior : MonoBehaviour
         Vector3 cameraRight = playerCamera.transform.right;
 
         //Find the desired velocity
-        _desiredVelocity = (inputForward * cameraRight + inputRight * cameraForward);
-
-        //Change the player facing
+        _desiredVelocity = (cameraForward * inputForward) + (cameraRight * inputRight);
 
         //Get jump input
         _isJumpDesired = Input.GetButtonDown("Jump");

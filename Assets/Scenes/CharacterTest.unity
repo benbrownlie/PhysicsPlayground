@@ -754,7 +754,7 @@ PrefabInstance:
       objectReference: {fileID: 127270034}
     - target: {fileID: 3673596246427196726, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: faceWithCamera
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3673596246427196726, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: _animator
