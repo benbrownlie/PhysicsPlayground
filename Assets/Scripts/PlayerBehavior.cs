@@ -26,11 +26,11 @@ public class PlayerBehavior : MonoBehaviour
         _controller = GetComponent<CharacterController>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (other.CompareTag("Obstacle"))
         {
-
+            _animator.enabled = false;
         }
     }
 

@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5878229827436560664}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.6276669, z: 0.08000612}
-  m_LocalScale: {x: 0.3333332, y: 10, z: 10}
+  m_LocalPosition: {x: 0, y: -0.50000024, z: 0}
+  m_LocalScale: {x: 0.29999998, y: 15, z: 10}
   m_Children: []
   m_Father: {fileID: 6995509305959896831}
   m_RootOrder: 0
@@ -90,7 +90,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5878229827436560664}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -124,8 +124,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6468622590141514634}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 6, z: 1.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 12, z: 3.5}
+  m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children:
   - {fileID: 6995509305959896831}
   m_Father: {fileID: 6621021740374442268}
@@ -237,8 +237,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6569356432451213629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 6, z: 1}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalScale: {x: 1, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 6621021740374442268}
   m_RootOrder: 0
@@ -331,14 +331,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7647234678544044395}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.83, z: 1.952}
-  m_LocalScale: {x: 0.1, y: 3, z: 0.1}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 5, y: 1, z: -0}
+  m_LocalScale: {x: 0.1, y: 10, z: 0.1}
   m_Children:
   - {fileID: 1148812539590256561}
   m_Father: {fileID: 6215109826691019}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
 --- !u!33 &981659414061279000
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -459,10 +459,10 @@ HingeJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8747328977539227303}
   m_ConnectedBody: {fileID: 6235287467786283587}
-  m_Anchor: {x: 0, y: 6, z: 0.5}
+  m_Anchor: {x: 0, y: 12, z: 0.5}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -1.0000001, z: 0.00000011920929}
+  m_ConnectedAnchor: {x: 0, y: -1.0000002, z: 0.00000047683716}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -470,7 +470,7 @@ HingeJoint:
     targetPosition: 0
   m_UseMotor: 1
   m_Motor:
-    targetVelocity: 100
+    targetVelocity: 50
     force: 500
     freeSpin: 0
   m_UseLimits: 0
