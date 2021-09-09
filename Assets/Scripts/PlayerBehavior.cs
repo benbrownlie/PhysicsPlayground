@@ -82,6 +82,7 @@ public class PlayerBehavior : MonoBehaviour
             _animator.SetFloat("Speed", _desiredVelocity.magnitude / speed);
         }
         _animator.SetBool("Jump", !_isGrounded);
+        _animator.SetFloat("VerticalSpeed", _desiredVelocity.y / jumpStrength);
 
         //Apply jump strength
         if (_isJumpDesired && _isGrounded)
