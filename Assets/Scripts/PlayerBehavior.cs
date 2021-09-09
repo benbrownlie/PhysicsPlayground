@@ -31,6 +31,16 @@ public class PlayerBehavior : MonoBehaviour
         if (other.CompareTag("Obstacle"))
         {
             _animator.enabled = false;
+            _controller.enabled = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            _animator.enabled = false;
+            _controller.enabled = false;
         }
     }
 
