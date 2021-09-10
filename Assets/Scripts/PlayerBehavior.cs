@@ -44,14 +44,6 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    //private void OnControllerColliderHit(ControllerColliderHit hit)
-    //{
-    //    if (hit.gameObject.CompareTag("Obstacle"))
-    //    {
-    //        _animator.enabled = false;
-    //    }
-    //}
-
     private void Update()
     {
         //Get movement input
