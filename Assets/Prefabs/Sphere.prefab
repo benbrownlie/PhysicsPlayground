@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 3904739500144376081}
   - component: {fileID: 3904739500144376082}
   - component: {fileID: 3904739500144376083}
+  - component: {fileID: -3759536840088110987}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,3 +128,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   awakeMaterial: {fileID: 2100000, guid: e4f7090007cf0c5478ac603108635651, type: 2}
   asleepMaterial: {fileID: 2100000, guid: 18d59a588d8798144a026ac6a44b6df7, type: 2}
+--- !u!114 &-3759536840088110987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904739500144376084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5276389dd62a84282e48e94150d5e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

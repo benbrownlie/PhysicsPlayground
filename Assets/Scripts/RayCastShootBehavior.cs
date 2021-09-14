@@ -6,7 +6,7 @@ public class RayCastShootBehavior : MonoBehaviour
 {
     public ProjectileLauncher launcher;
 
-    void FixedUpdate()
+    void Update()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -15,7 +15,7 @@ public class RayCastShootBehavior : MonoBehaviour
         {
             Transform desiredPoint = hit.transform;
 
-            if (desiredPoint.CompareTag("Breakable") && Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 launcher.LaunchProjectile();
             }

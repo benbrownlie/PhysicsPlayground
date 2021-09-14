@@ -180,44 +180,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4b12e0bc0516a043bba2d1b9937f0d4, type: 3}
---- !u!1 &92941591 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4257310203573894985, guid: b69df7354539df04b891b8ebead73409, type: 3}
-  m_PrefabInstance: {fileID: 258609627}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &92941593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92941591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afaeb5c1cb6a5e840b8e93e26d8271c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 809246014}
-  projectile: {fileID: 3904739500144376082, guid: 5d84067f3683abb46971d0529a555051, type: 3}
-  projectileTime: 2
---- !u!1 &109650231 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5421892316483276634, guid: b69df7354539df04b891b8ebead73409, type: 3}
-  m_PrefabInstance: {fileID: 258609627}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &109650232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109650231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a1256ea6667f164991c68a52511d5f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launcher: {fileID: 92941593}
 --- !u!4 &144899233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1579598327856894126, guid: f4b12e0bc0516a043bba2d1b9937f0d4, type: 3}
@@ -601,6 +563,18 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.x
       value: 0.060835812
       objectReference: {fileID: 0}
+    - target: {fileID: 3652302259879524450, guid: b69df7354539df04b891b8ebead73409, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 3904739500144376082, guid: 5d84067f3683abb46971d0529a555051, type: 3}
+    - target: {fileID: 3652302259879524450, guid: b69df7354539df04b891b8ebead73409, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652302259879524450, guid: b69df7354539df04b891b8ebead73409, type: 3}
+      propertyPath: projectileTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3673596246427196726, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: playerCamera
       value: 
@@ -615,7 +589,7 @@ PrefabInstance:
       objectReference: {fileID: 200740966}
     - target: {fileID: 3673596246427196726, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: jumpStrength
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4521193770710555409, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2422,11 +2396,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1579598327856894126, guid: f4b12e0bc0516a043bba2d1b9937f0d4, type: 3}
   m_PrefabInstance: {fileID: 1963122937}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &809246014 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 869725998520202028, guid: 0ec4ce79e673c7c4595f2de88bb4aa4e, type: 3}
-  m_PrefabInstance: {fileID: 814458440}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &814458440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2781,11 +2750,6 @@ MonoBehaviour:
   sensitivity: 5
   invertY: 0
   relaxSpeed: 20
---- !u!4 &1045694409 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4521193770710555409, guid: b69df7354539df04b891b8ebead73409, type: 3}
-  m_PrefabInstance: {fileID: 258609627}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1058235289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4783,7 +4747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afaeb5c1cb6a5e840b8e93e26d8271c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1045694409}
   projectile: {fileID: 3904739500144376082, guid: 5d84067f3683abb46971d0529a555051, type: 3}
   projectileTime: 2
 --- !u!4 &1937797717
