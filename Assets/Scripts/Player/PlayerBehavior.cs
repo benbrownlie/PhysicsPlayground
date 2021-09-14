@@ -19,7 +19,8 @@ public class PlayerBehavior : MonoBehaviour
     private Vector3 _desiredVelocity;
     private Vector3 _airVelocity;
     private bool _isJumpDesired = false;
-    private bool _isGrounded = false;
+
+    public bool isGrounded = false;
 
     private void Awake()
     {
@@ -32,6 +33,11 @@ public class PlayerBehavior : MonoBehaviour
         {
             _animator.enabled = false;
             _controller.enabled = false;
+        }
+
+        if (other.CompareTag("Arsenal"))
+        {
+
         }
     }
 
@@ -68,7 +74,7 @@ public class PlayerBehavior : MonoBehaviour
         _desiredVelocity *= speed;
 
         //Check for ground
-        _isGrounded = _controller.isGrounded;
+        isGrounded = _controller.isGrounded;
 
         //Update animations
         if (faceWithCamera)
@@ -83,18 +89,18 @@ public class PlayerBehavior : MonoBehaviour
                 transform.forward = _desiredVelocity.normalized;
             _animator.SetFloat("Speed", _desiredVelocity.magnitude / speed);
         }
-        _animator.SetBool("Jump", !_isGrounded);
+        _animator.SetBool("Jump", !isGrounded);
         _animator.SetFloat("VerticalSpeed", _desiredVelocity.y / jumpStrength);
 
         //Apply jump strength
-        if (_isJumpDesired && _isGrounded)
+        if (_isJumpDesired && isGrounded)
         {
             _airVelocity.y = jumpStrength;
             _isJumpDesired = false;
         }
 
         //Stop on ground
-        if (_isGrounded && _airVelocity.y < 0.0f)
+        if (isGrounded && _airVelocity.y < 0.0f)
         {
             _airVelocity.y = -1.0f;
         }

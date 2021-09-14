@@ -5,6 +5,7 @@ using UnityEngine;
 public class RayCastShootBehavior : MonoBehaviour
 {
     public ProjectileLauncher launcher;
+    public PlayerBehavior user;
 
     void Update()
     {
@@ -15,7 +16,7 @@ public class RayCastShootBehavior : MonoBehaviour
         {
             Transform desiredPoint = hit.transform;
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && user.isGrounded == true)
             {
                 launcher.LaunchProjectile();
             }
