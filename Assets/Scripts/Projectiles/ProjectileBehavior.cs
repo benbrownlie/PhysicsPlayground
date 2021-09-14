@@ -8,7 +8,7 @@ public class ProjectileBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Breakable"))
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }

@@ -11,6 +11,7 @@ public class PlayerBehavior : MonoBehaviour
     public bool faceWithCamera = true;
 
     public Camera playerCamera;
+    public GameObject playerOrbs;
 
     private CharacterController _controller;
     [SerializeField]
@@ -37,7 +38,7 @@ public class PlayerBehavior : MonoBehaviour
 
         if (other.CompareTag("Arsenal"))
         {
-
+            playerOrbs.SetActive(true);
         }
     }
 
