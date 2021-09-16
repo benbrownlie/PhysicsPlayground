@@ -678,6 +678,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0.09755137
       objectReference: {fileID: 0}
+    - target: {fileID: 3237882270010794060, guid: b69df7354539df04b891b8ebead73409, type: 3}
+      propertyPath: projectileTime
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3602828825940999112, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.0020776934

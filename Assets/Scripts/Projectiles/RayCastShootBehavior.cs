@@ -6,6 +6,8 @@ public class RayCastShootBehavior : MonoBehaviour
 {
     public ProjectileLauncher launcher;
     public PlayerBehavior user;
+    public GameObject playerOrbs;
+    public bool canShoot = false;
 
     void Update()
     {
@@ -16,7 +18,13 @@ public class RayCastShootBehavior : MonoBehaviour
         {
             Transform desiredPoint = hit.transform;
 
-            if (Input.GetMouseButtonDown(0) && user.isGrounded == true)
+            if (Input.GetMouseButtonDown(0) && desiredPoint.CompareTag("Arsenal"))
+            {
+                playerOrbs.SetActive(true);
+                canShoot = true;
+            }
+
+            if (Input.GetMouseButtonDown(0) && user.isGrounded && canShoot)
             {
                 launcher.LaunchProjectile();
             }

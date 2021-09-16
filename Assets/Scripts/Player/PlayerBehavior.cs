@@ -36,10 +36,10 @@ public class PlayerBehavior : MonoBehaviour
             _controller.enabled = false;
         }
 
-        if (other.CompareTag("Arsenal"))
-        {
-            playerOrbs.SetActive(true);
-        }
+        //if (other.CompareTag("Arsenal"))
+        //{
+        //    playerOrbs.SetActive(true);
+        //}
     }
 
     private void OnCollisionEnter(Collision collision)
