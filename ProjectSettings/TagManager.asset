@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - Breakable
   - Arsenal
+  - Arsenal1
   layers:
   - Default
   - TransparentFX

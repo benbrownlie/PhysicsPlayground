@@ -19,11 +19,11 @@ public class ProjectileLauncher : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            LaunchProjectile();
+            LaunchProjectile(projectile);
         }
     }
 
-    public void LaunchProjectile()
+    public void LaunchProjectile(Rigidbody projectile)
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;

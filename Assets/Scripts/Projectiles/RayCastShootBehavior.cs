@@ -6,8 +6,10 @@ public class RayCastShootBehavior : MonoBehaviour
 {
     public ProjectileLauncher launcher;
     public PlayerBehavior user;
-    public GameObject playerOrbs;
-    public bool canShoot = false;
+    public GameObject[] playerOrbs;
+    public bool canShoot1 = false;
+    public bool canShoot2 = false;
+    public Rigidbody[] ammoTypes;
 
     void Update()
     {
@@ -20,13 +22,24 @@ public class RayCastShootBehavior : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && desiredPoint.CompareTag("Arsenal"))
             {
-                playerOrbs.SetActive(true);
-                canShoot = true;
+                playerOrbs[0].SetActive(true);
+                canShoot1 = true;
             }
 
-            if (Input.GetMouseButtonDown(0) && user.isGrounded && canShoot)
+            if (Input.GetMouseButtonDown(0) && desiredPoint.CompareTag("Arsenal1"))
             {
-                launcher.LaunchProjectile();
+                playerOrbs[1].SetActive(true);
+                canShoot2 = true;
+            }
+
+            if (Input.GetMouseButtonDown(0) && user.isGrounded && canShoot1)
+            {
+                launcher.LaunchProjectile(ammoTypes[0]);
+            }
+
+            if (Input.GetMouseButtonDown(1) && user.isGrounded && canShoot2)
+            {
+                launcher.LaunchProjectile(ammoTypes[1]);
             }
         }
     }
