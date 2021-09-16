@@ -19,9 +19,8 @@ public class ExplosiveProjectileBehavior : MonoBehaviour
         StartCoroutine(DespawnTimer());
     }
 
-    private IEnumerator OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        yield return new WaitForSeconds(3);
-        rigidbody.AddExplosionForce(500, transform.position, 1000);
+        rigidbody.AddExplosionForce(1000.0f, transform.position, 100.0f);
     }
 }
