@@ -107,7 +107,8 @@ MonoBehaviour:
   playerOrbs:
   - {fileID: 6513121173033000868}
   - {fileID: 57985123933118551}
-  canShoot: 0
+  canShoot1: 0
+  canShoot2: 0
   ammoTypes:
   - {fileID: 3898769912396871363, guid: 670042951ba57d845b9f95a335cc65fb, type: 3}
   - {fileID: 1465917026180660918, guid: 2adfab3d9ed67b54ebd14be68818a36c, type: 3}
@@ -928,6 +929,14 @@ PrefabInstance:
     - target: {fileID: 494036499550061311, guid: 08dfefa6b5a7f604c9a0a815788cf7b7, type: 3}
       propertyPath: m_Name
       value: Rotating Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557200257120317635, guid: 08dfefa6b5a7f604c9a0a815788cf7b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557200257120317635, guid: 08dfefa6b5a7f604c9a0a815788cf7b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2655387476414805691, guid: 08dfefa6b5a7f604c9a0a815788cf7b7, type: 3}
       propertyPath: projectile

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileBehavior : MonoBehaviour
+public class ExplosiveProjectileBehavior : MonoBehaviour
 {
     public Rigidbody rigidbody;
 
@@ -19,14 +19,9 @@ public class ProjectileBehavior : MonoBehaviour
         StartCoroutine(DespawnTimer());
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private IEnumerator OnCollisionEnter(Collision collision)
     {
-        //Checks if the collision is a breakable
-        if (collision.gameObject.CompareTag("Breakable"))
-        {
-            //If so sets the Breakable to in-active and destroys itself
-            collision.gameObject.SetActive(false);
-            Destroy(gameObject);
-        }
+        yield return new WaitForSeconds(3);
+        rigidbody.AddExplosionForce(500, transform.position, 1000);
     }
 }

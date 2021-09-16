@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 6246539330160537878}
   - component: {fileID: 5515817519244960786}
   - component: {fileID: 1465917026180660918}
-  - component: {fileID: -8824402060083990930}
+  - component: {fileID: -8070108387976098379}
   m_Layer: 0
   m_Name: Launchable2
-  m_TagString: Untagged
+  m_TagString: Explosive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3528939717041589054}
-  m_Material: {fileID: 13400000, guid: e75901b9865b932428a98a5914053db6, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -113,7 +113,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-8824402060083990930
+--- !u!114 &-8070108387976098379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,6 +122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3528939717041589054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b5276389dd62a84282e48e94150d5e7, type: 3}
+  m_Script: {fileID: 11500000, guid: ac7e68cb47b9b76458708ad0995b7c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbody: {fileID: 1465917026180660918}
