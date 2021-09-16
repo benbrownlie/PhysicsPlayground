@@ -12,6 +12,7 @@ public class PlayerBehavior : MonoBehaviour
 
     public Camera playerCamera;
     public GameObject playerOrbs;
+    public Transform checkpoint;
 
     private CharacterController _controller;
     [SerializeField]
@@ -48,6 +49,11 @@ public class PlayerBehavior : MonoBehaviour
         {
             _animator.enabled = false;
             _controller.enabled = false;
+        }
+
+        if (collision.gameObject.CompareTag("Checkpoint"))
+        {
+            checkpoint = collision.transform;
         }
     }
 

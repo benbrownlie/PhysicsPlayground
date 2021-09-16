@@ -9,6 +9,8 @@ TagManager:
   - Arsenal
   - Arsenal1
   - Explosive
+  - Projectile
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

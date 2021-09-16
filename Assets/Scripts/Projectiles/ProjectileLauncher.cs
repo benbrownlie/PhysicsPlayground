@@ -17,10 +17,10 @@ public class ProjectileLauncher : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            LaunchProjectile(projectile);
-        }
+        //if (Input.GetKeyDown(KeyCode.Z))
+        //{
+        //    LaunchProjectile(projectile);
+        //}
     }
 
     public void LaunchProjectile(Rigidbody projectile)
