@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ExplosiveProjectileBehavior : MonoBehaviour
 {
-    public Rigidbody rigidbody;
+    [SerializeField]
+    private Rigidbody _rigidbody;
 
     public IEnumerator DespawnTimer()
     {
@@ -21,6 +22,6 @@ public class ExplosiveProjectileBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        rigidbody.AddExplosionForce(1000.0f, transform.position, 100.0f);
+        _rigidbody.AddExplosionForce(1000.0f, transform.position, 100.0f);
     }
 }

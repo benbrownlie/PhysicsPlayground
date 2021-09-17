@@ -8,9 +8,6 @@ public class KillPlaneBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other == player)
-        {
-            player.transform.position = player.checkpoint.transform.position;
-        }
+
     }
 }

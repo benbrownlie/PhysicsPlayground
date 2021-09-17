@@ -12,7 +12,7 @@ public class PlayerBehavior : MonoBehaviour
 
     public Camera playerCamera;
     public GameObject playerOrbs;
-    public Transform checkpoint;
+    public Vector3 checkpoint;
 
     private CharacterController _controller;
     [SerializeField]
@@ -41,6 +41,16 @@ public class PlayerBehavior : MonoBehaviour
         //{
         //    playerOrbs.SetActive(true);
         //}
+
+        if (other.gameObject.CompareTag("Checkpoint"))
+        {
+            checkpoint = other.transform.position;
+        }
+
+        if (other.gameObject.CompareTag("Killplane"))
+        {
+            transform.position = checkpoint;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -49,11 +59,6 @@ public class PlayerBehavior : MonoBehaviour
         {
             _animator.enabled = false;
             _controller.enabled = false;
-        }
-
-        if (collision.gameObject.CompareTag("Checkpoint"))
-        {
-            checkpoint = collision.transform;
         }
     }
 

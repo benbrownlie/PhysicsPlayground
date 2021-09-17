@@ -11,6 +11,7 @@ TagManager:
   - Explosive
   - Projectile
   - Checkpoint
+  - Killplane
   layers:
   - Default
   - TransparentFX
