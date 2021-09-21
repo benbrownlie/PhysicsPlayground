@@ -60,6 +60,11 @@ public class RayCastShootBehavior : MonoBehaviour
                 canShoot2 = false;
             }
 
+            if (Input.GetMouseButton(0) && desiredPoint.CompareTag("Button"))
+            {
+                desiredPoint.gameObject.SetActive(false);
+            }
+
             //Checks for the correct mouse input, that the player isn't in the air, and that they can fire on a specific cylinder
             if (Input.GetMouseButtonDown(0) && user.isGrounded && canShoot1)
             {

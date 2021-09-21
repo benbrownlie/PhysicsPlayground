@@ -15,6 +15,7 @@ TagManager:
   - Enemy
   - Arsenal2
   - Ice
+  - Button
   layers:
   - Default
   - TransparentFX

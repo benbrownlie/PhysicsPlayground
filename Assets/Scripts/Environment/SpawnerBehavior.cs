@@ -17,14 +17,17 @@ public class SpawnerBehavior : MonoBehaviour
 
     public IEnumerator SpawnObjects()
     {
-        for (int i = 0; i < maxSpawnCount; i++)
+        if (canSpawn == true)
         {
-            GameObject spawnedObject = Instantiate(spawnable, transform.position, new Quaternion());
+            for (int i = 0; i < maxSpawnCount; i++)
+            {
+                GameObject spawnedObject = Instantiate(spawnable, transform.position, new Quaternion());
 
-            spawnedObject.GetComponent<EnemyBehavior>().target = target;
-            spawnedObject.name = spawnedObject.name + i;
+                spawnedObject.GetComponent<EnemyBehavior>().target = target;
+                spawnedObject.name = spawnedObject.name + i;
 
-            yield return new WaitForSeconds(timeBetweenSpawns);
+                yield return new WaitForSeconds(timeBetweenSpawns);
+            }
         }
     }
 

@@ -5,13 +5,14 @@ using UnityEngine;
 public class EnvironmentEvent : MonoBehaviour
 {
     public GameObject triggerObject;
-    public GameObject eventObject;
+    public GameObject[] eventObjects;
 
     private void FixedUpdate()
     {
         if (triggerObject.active == false)
         {
-            eventObject.SetActive(true);
+            eventObjects[0].SetActive(true);
+            eventObjects[1].SetActive(true);
         }
     }
 }
