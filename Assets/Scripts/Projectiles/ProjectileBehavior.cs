@@ -28,5 +28,11 @@ public class ProjectileBehavior : MonoBehaviour
             collision.gameObject.SetActive(false);
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 }

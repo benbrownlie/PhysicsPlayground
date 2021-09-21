@@ -9,6 +9,7 @@ public class RayCastShootBehavior : MonoBehaviour
     public GameObject[] playerOrbs;
     public bool canShoot1 = false;
     public bool canShoot2 = false;
+    public bool canShoot3 = false;
     public Rigidbody[] ammoTypes;
 
     void Update()
@@ -26,9 +27,11 @@ public class RayCastShootBehavior : MonoBehaviour
                 playerOrbs[0].SetActive(true);
                 canShoot1 = true;
 
-                //Sets the other orb type to in-active and unable to fire
+                //Sets the other orb types to in-active and unable to fire
                 playerOrbs[1].SetActive(false);
+                playerOrbs[2].SetActive(false);
                 canShoot2 = false;
+                canShoot3 = false;
             }
 
             if (Input.GetMouseButtonDown(0) && desiredPoint.CompareTag("Arsenal1"))
@@ -37,9 +40,24 @@ public class RayCastShootBehavior : MonoBehaviour
                 playerOrbs[1].SetActive(true);
                 canShoot2 = true;
 
-                //Sets the other orb type to in-active and unable to fire
+                //Sets the other orb types to in-active and unable to fire
                 playerOrbs[0].SetActive(false);
+                playerOrbs[2].SetActive(false);
                 canShoot1 = false;
+                canShoot3 = false;
+            }
+
+            if (Input.GetMouseButtonDown(0) && desiredPoint.CompareTag("Arsenal2"))
+            {
+                //Sets the orb type at the index of 2 to active and able to fire
+                playerOrbs[2].SetActive(true);
+                canShoot3 = true;
+
+                //Sets the other orb types to in-active and unable to fire
+                playerOrbs[0].SetActive(false);
+                playerOrbs[1].SetActive(false);
+                canShoot1 = false;
+                canShoot2 = false;
             }
 
             //Checks for the correct mouse input, that the player isn't in the air, and that they can fire on a specific cylinder
@@ -53,6 +71,12 @@ public class RayCastShootBehavior : MonoBehaviour
             {
                 //Fires the projectile using the ammo type passed in
                 launcher.LaunchProjectile(ammoTypes[1]);
+            }
+
+            if (Input.GetMouseButtonDown(0) && user.isGrounded && canShoot3)
+            {
+                //Fires the projectile using the ammo type passed in
+                launcher.LaunchProjectile(ammoTypes[2]);
             }
         }
     }

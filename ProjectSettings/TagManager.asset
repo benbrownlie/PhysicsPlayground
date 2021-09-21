@@ -12,6 +12,9 @@ TagManager:
   - Projectile
   - Checkpoint
   - Killplane
+  - Enemy
+  - Arsenal2
+  - Ice
   layers:
   - Default
   - TransparentFX

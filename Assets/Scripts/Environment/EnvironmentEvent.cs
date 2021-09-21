@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class EnvironmentEvent : MonoBehaviour
 {
-    public GameObject[] triggerObjects;
+    public GameObject triggerObject;
     public GameObject eventObject;
 
     private void FixedUpdate()
     {
-        
-        //if (triggerObjects[])
-        //{
-        //    Debug.Log("Success");
-        //    eventObject.SetActive(false);
-        //}
+        if (triggerObject.active == false)
+        {
+            eventObject.SetActive(true);
+        }
     }
 }
