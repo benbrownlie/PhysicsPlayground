@@ -12,6 +12,8 @@ public class EnemyBehavior : MonoBehaviour
     //Reference to the object the enemy will target
     public GameObject target;
 
+    public GameObject[] patrolPoints;
+
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -21,7 +23,15 @@ public class EnemyBehavior : MonoBehaviour
     private void FixedUpdate()
     {
         //Sets the enemy's destination to be the position of its target
-        agent.SetDestination(target.transform.position);
+        if (target)
+        {
+            agent.SetDestination(target.transform.position);
+        }
+
+        else
+        {
+            agent.SetDestination(patrolPoints[0].transform.position);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
