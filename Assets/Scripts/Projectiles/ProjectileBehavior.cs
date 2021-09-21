@@ -29,8 +29,10 @@ public class ProjectileBehavior : MonoBehaviour
             Destroy(gameObject);
         }
 
+        //Checks if the collision is an enemy.
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            //If so, destroys the enemy along with itself
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

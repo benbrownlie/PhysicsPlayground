@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class RayCastShootBehavior : MonoBehaviour
 {
+    //Reference to the projectile launcher
     public ProjectileLauncher launcher;
+    //Reference to the Player
     public PlayerBehavior user;
+    //Array used to store the orbs that float around the player
     public GameObject[] playerOrbs;
+    //Bools for each launcher projectile that tell which one is allowed to shoot
     public bool canShoot1 = false;
     public bool canShoot2 = false;
     public bool canShoot3 = false;
+    //Array used to store the various amounts of projectiles
     public Rigidbody[] ammoTypes;
 
     void Update()
     {
+        //Sets a raycast to the mouse's position
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
