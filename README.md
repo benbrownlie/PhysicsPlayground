@@ -5,6 +5,9 @@ To display and implement various subjects learned from the Physics for Games ass
 
 ## Gameplay
 You play as Unity-Chan, your goal is to make it through the obstacle course. 
+
+Avoid touching the swinging hammers and rotating spikes as they will kill you.
+
 At the end of the course is a small shooting gallery to test out different types of projectiles.
 
 ## Controls
