@@ -1,1 +1,24 @@
 PhysicsPlayground
+
+## Purpose
+To display and implement various subjects learned from the Physics for Games assessment.
+
+## Gameplay
+You play as Unity-Chan, your goal is to make it through the obstacle course. 
+At the end of the course is a small shooting gallery to test out different types of projectiles.
+
+## Controls
+WASD for basic movement.
+* > W = Forward
+* > A = Left
+* > S = Backward
+* > D = Right
+
+Spacebar to Jump
+
+Left Click to fire/interact with objects in the direction of the mouse cursor.
+Holding Right-Click and dragging will move the camera.
+
+## How to download/play
+* Navigate to the releases tab and download the most recent release.
+* Unzip the folder and launch the .exe
