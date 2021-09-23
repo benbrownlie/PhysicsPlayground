@@ -13,6 +13,7 @@ public class PlayerBehavior : MonoBehaviour
     public Camera playerCamera;
     public GameObject playerOrbs;
     public Vector3 checkpoint;
+    public GameObject menuScreen;
 
     private CharacterController _controller;
     [SerializeField]
@@ -37,11 +38,6 @@ public class PlayerBehavior : MonoBehaviour
             _controller.enabled = false;
         }
 
-        //if (other.CompareTag("Arsenal"))
-        //{
-        //    playerOrbs.SetActive(true);
-        //}
-
         if (other.gameObject.CompareTag("Checkpoint"))
         {
             checkpoint = other.transform.position;
@@ -49,7 +45,7 @@ public class PlayerBehavior : MonoBehaviour
 
         if (other.gameObject.CompareTag("Killplane"))
         {
-            transform.position = checkpoint;
+            menuScreen.SetActive(true);
         }
     }
 
@@ -61,6 +57,7 @@ public class PlayerBehavior : MonoBehaviour
             _controller.enabled = false;
         }
     }
+
 
     private void Update()
     {
