@@ -10,6 +10,8 @@ Avoid touching the swinging hammers and rotating spikes as they will kill you.
 
 At the end of the course is a small shooting gallery to test out different types of projectiles.
 
+Clicking on the objects matching the color of the projectile type, shown in the bottom left of the screen, will grant you its power.
+
 ## Controls
 WASD for basic movement.
 * > W = Forward
