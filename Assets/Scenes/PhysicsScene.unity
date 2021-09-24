@@ -984,7 +984,7 @@ PrefabInstance:
       objectReference: {fileID: 200740966}
     - target: {fileID: 3673596246427196726, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: jumpStrength
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3673596246427196726, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: playerOrbs
@@ -1004,7 +1004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4521193770710555409, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.99
+      value: 38.23
       objectReference: {fileID: 0}
     - target: {fileID: 4521193770710555409, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1012,7 +1012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4521193770710555409, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 41.089996
+      value: -14.84
       objectReference: {fileID: 0}
     - target: {fileID: 4521193770710555409, guid: b69df7354539df04b891b8ebead73409, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4450,7 +4450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.19453722, y: -0, z: -0, w: 0.98089516}
-  m_LocalPosition: {x: 21.72, y: 4.79, z: 36.96}
+  m_LocalPosition: {x: 37.96, y: 4.79, z: -18.969997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
