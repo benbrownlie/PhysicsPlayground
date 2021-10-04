@@ -12,6 +12,10 @@ At the end of the course is a small shooting gallery to test out different types
 
 Clicking on the objects matching the color of the projectile type, shown in the bottom left of the screen, will grant you its power.
 
+(Upon hitting an obstacle or falling off the map, the game over screen will open containing two options. Restart & Exit)
+Restart = Player will respawn at the beginning of the map.
+Exit = The game will close.
+
 ## Controls
 WASD for basic movement.
 * > W = Forward
