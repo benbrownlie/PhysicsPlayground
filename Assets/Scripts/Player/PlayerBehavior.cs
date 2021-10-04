@@ -36,6 +36,7 @@ public class PlayerBehavior : MonoBehaviour
         {
             _animator.enabled = false;
             _controller.enabled = false;
+            menuScreen.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("Checkpoint"))
